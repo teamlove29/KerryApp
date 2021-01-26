@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <ImageView
+            android:id="@+id/roundedImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/color_orange"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_supervised_user_circle_24"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/roundedImageView"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/white"
+            android:text="เคอรี่เอ็กซ์เพรส"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_toRightOf="@id/roundedImageView"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="เข้าสู่ระบบ" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:src="@drawable/ic_baseline_notifications_none_24"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/imagekerry"
+        />
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ติดตามพัสดุ"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/color_orange"
+        />
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:layout_marginTop="10dp">
+
+    <Button
+        android:id="@+id/seachButtom"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:text="ระบุหมายเลขติดตามพัสดุ"
+        android:textColor="@color/black"
+        android:layout_marginRight="20dp"
+
+        android:backgroundTint="@color/item_holder"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/seachButtom"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@color/color_orange"
+        android:foreground="?android:selectableItemBackground"
+        android:src="@drawable/ic_baseline_qr_code_24"
+        app:tint="@color/white" />
+
+</RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
